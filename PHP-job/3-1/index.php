@@ -1,9 +1,17 @@
 <?php
-$age = 22;
-
-if ($age >= 20) {
-    echo "お酒が飲めるぞ！";
-} else {
-    echo "お酒は二十歳になってから！";
-}
+for ($i = 1; $i <= 100; $i++) { 
+    if ($i % 3 === 0 && $i % 5 === 0) {
+          echo 'FizzBuzz' ;
+          echo '<br>'; 
+      } elseif ($i % 3 === 0) { 
+          echo 'fizz';
+          echo '<br>';
+      } elseif ($i % 5 === 0) {
+          echo 'buzz';
+          echo '<br>';
+      } else { 
+          echo $i; 
+          echo '<br>';
+    }
+  }
 ?>
